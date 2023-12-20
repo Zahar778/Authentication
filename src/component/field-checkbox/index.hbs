@@ -1,10 +1,10 @@
-<div class="field field--checkbox">
+<div class="field field--checkbox validation">
 	<button onclick="
 	FieldCheckbox.toggle(this);
 
 	{{action}}('{{name}}', this.hasAttribute('active')); 
 	"
-	type="button" class="field__weapper">
+	type="button" class="field__weapper validation" name="{{name}}">
 		<span class="field__icon"></span>
 		<span class="field__label field__label--checkbox">{{label}}</span>
 	</button>

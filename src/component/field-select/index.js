@@ -36,7 +36,7 @@ class FieldSelect {
 
         
 
-        list.toogleAttribute('active')
+        list.toggleAttribute('active')
     }
 }
 window.FieldSelect = FieldSelect

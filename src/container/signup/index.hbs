@@ -12,26 +12,30 @@
 
     <div class="form">
         <div class="form__item">
-           {{> field action='SingupForm.change' label="Емаил адресс" type='email' name='email' placeholder="Ваш e-mail"}}
+           {{> field action='SignupForm.change' label="Емаил адресс" type='email' name='email' placeholder="Ваш e-mail"}}
             <span name="email" class="form__error">Помилка</span>
         </div>
         <div class="form__item">
-           {{> field-password action='SingupForm.change' label="Пароль" type='password' name='password' placeholder="Введите пароль"}}
+           {{> field-password action='SignupForm.change' label="Пароль" type='password' name='password' placeholder="Введите пароль"}}
             <span name="password" class="form__error">Помилка</span>
         </div>
                 <div class="form__item">
-           {{> field-checkbox type='isConfirm' action='SingupForm.change' label="Ви погоджуэтеся з правилами сервiса" name='isConfirm' }}
+           {{> field-password action='SignupForm.change' label="Пароль ще раз" type='password' name='passwordAgain' placeholder="Введите пароль ещё раз"}}
+            <span name="passwordAgain" class="form__error">Помилка</span>
+        </div>
+                <div class="form__item">
+           {{> field-checkbox type='isConfirm' action='SignupForm.change' label="Ви погоджуэтеся з правилами сервiса" name='isConfirm' }}
             <span name="isConfirm" class="form__error">Помилка</span>
         </div>
             <div class="form__item">
-           {{> field-select action='SingupForm.change' label="Роль" name='role'  placeholder="Оберiть роль" list=data.role}}
+           {{> field-select action='SignupForm.change' label="Роль" name='role'  placeholder="Оберiть роль" list=data.role}}
             <span name="role" class="form__error">Помилка</span>
         </div>
     </div>
 
-    <button onclick="SingupForm.submit" class="button" type="button">Зареэструватися</button>
+    <button onclick="SignupForm.submit" class="button button--disabled" type="button">Зареэструватися</button>
 
-    <span class="alert alert--error">Внимание, ошибка!</span>
+    <span class="alert alert--disabled">Внимание, ошибка!</span>
 </form>
 </div>
 
