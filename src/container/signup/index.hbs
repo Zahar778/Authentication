@@ -12,24 +12,24 @@
 
     <div class="form">
         <div class="form__item">
-           {{> field action='singForm.change' label="El.адруса" type='email' name='email' placeholder="Ваш e-mail"}}
+           {{> field action='SingupForm.change' label="Емаил адресс" type='email' name='email' placeholder="Ваш e-mail"}}
             <span name="email" class="form__error">Помилка</span>
         </div>
         <div class="form__item">
-           {{> field-password action='singForm.change' label="Пароль" type='password' name='password' placeholder="Введите пароль"}}
+           {{> field-password action='SingupForm.change' label="Пароль" type='password' name='password' placeholder="Введите пароль"}}
             <span name="password" class="form__error">Помилка</span>
         </div>
                 <div class="form__item">
-           {{> field-checkbox action='singForm.change' label="Ви погоджуэтеся з правилами сервiса" name='isConfirm' }}
+           {{> field-checkbox type='isConfirm' action='SingupForm.change' label="Ви погоджуэтеся з правилами сервiса" name='isConfirm' }}
             <span name="isConfirm" class="form__error">Помилка</span>
         </div>
-                        <div class="form__item">
-           {{> field-select action='singForm.change' label="Роль" name='role'  placeholder="Оберiть роль" list=data.role}}
+            <div class="form__item">
+           {{> field-select action='SingupForm.change' label="Роль" name='role'  placeholder="Оберiть роль" list=data.role}}
             <span name="role" class="form__error">Помилка</span>
         </div>
     </div>
 
-    <button onclick="singupForm.submit" class="button" type="button">Зареэструватися</button>
+    <button onclick="SingupForm.submit" class="button" type="button">Зареэструватися</button>
 
     <span class="alert alert--error">Внимание, ошибка!</span>
 </form>

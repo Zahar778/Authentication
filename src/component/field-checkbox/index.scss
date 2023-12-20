@@ -2,7 +2,7 @@
 @use '../field/index.scss' as field;
 
 .field--checkbox {
-	.field--wrapper {
+	.field__weapper {
 		border: 1px solid s.color('box');
 		padding: s.space(4);
 		border-radius: 10px;
@@ -39,6 +39,11 @@
 	}
 	.field__input--disabled {
 		display: none;
+	}
+	.field__label--checkbox {
+		font-size: 16px;
+		color: s.color('dark');
+		padding-top: 3px;
 	}
 }
 

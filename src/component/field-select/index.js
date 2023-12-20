@@ -2,7 +2,7 @@ class FieldSelect {
     static toggle = (target) => {
         const options = target.nextElementSibling
 
-        options.toogleAttribute('active')
+        options.toggleAttribute('active')
 
         setTimeout(() => {
             window.addEventListener(

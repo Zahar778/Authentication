@@ -8,7 +8,7 @@ router.get('/signup', function (req, res) {
     return res.render ('signup', {
         name: 'signup',
 
-        component: ['back-button', 'field', 'field-passeord','field-checkbox','field-select' ],
+        component: ['back-button', 'field', 'field-password','field-checkbox','field-select' ],
 
         title: 'Signup page',
 
