@@ -1,0 +1,41 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<div class="page page--background">
+<header>
+    {{> back-button}}
+</header>
+<form class="page__section">
+    <h1 class="page__title">Реэстрацiя</h1>
+
+    <div class="form">
+        <div class="form__item">
+           {{> field action='singForm.change' label="El.адруса" type='email' name='email' placeholder="Ваш e-mail"}}
+            <span name="email" class="form__error">Помилка</span>
+        </div>
+        <div class="form__item">
+           {{> field-password action='singForm.change' label="Пароль" type='password' name='password' placeholder="Введите пароль"}}
+            <span name="password" class="form__error">Помилка</span>
+        </div>
+                <div class="form__item">
+           {{> field-checkbox action='singForm.change' label="Ви погоджуэтеся з правилами сервiса" name='isConfirm' }}
+            <span name="isConfirm" class="form__error">Помилка</span>
+        </div>
+                        <div class="form__item">
+           {{> field-select action='singForm.change' label="Роль" name='role'  placeholder="Оберiть роль" list=data.role}}
+            <span name="role" class="form__error">Помилка</span>
+        </div>
+    </div>
+
+    <button onclick="singupForm.submit" class="button" type="button">Зареэструватися</button>
+
+    <span class="alert alert--error">Внимание, ошибка!</span>
+</form>
+</div>
+
+{{!
+    Цей код містить лише те, що буде виводитись в <body>
+    Адже наш layout/default.hbs має вже структуру HTML
+}}

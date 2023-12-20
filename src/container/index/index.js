@@ -1,3 +1,5 @@
-import '../../script/test'
+class Test {
+    test = 'Test'
+}
 
-console.log('container')
+module.exports = Test
